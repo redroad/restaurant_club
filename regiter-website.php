@@ -1,5 +1,4 @@
 <?php
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -7,7 +6,6 @@
 ?>
 
 <?php
-
 /*
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
@@ -26,7 +24,7 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="">
         <meta name="author" content="">
-            
+
         <!-- Le styles -->
         <link href="/css/bootstrap.css" rel="stylesheet">
         <link href="/css/test.css" rel="stylesheet">
@@ -40,8 +38,8 @@ and open the template in the editor.
         <script type="text/javascript" async="" src="http://www.google-analytics.com/ga.js"></script>
     </head>
     <body>
-        
-        
+
+
         <div class="navbar navbar-inverse navbar-fixed-top">
             <div class="navbar-inner">
                 <div class="container-fluid">
@@ -71,82 +69,84 @@ and open the template in the editor.
 
         <div class="container-fluid">
             <div class="row-fluid">
-                
+
                 <div class="span9">    
                     <div class="content-detail-news ">
                         <div class="content-detail-news-header ">                 
                             <h3>แบบฟอร์มสมัครสำหรับสมาชิกทั่วไป</h3>              
                         </div>
-                            
+
                         <form class="form-horizontal ">
                             <div class="control-group">
-                                <label class="control-label" for="inputEmail">ชื่อเข้าระบบ</label>
+                                <label class="control-label" for="inputEmail">ชื่อที่ใช้แสดง*</label>
                                 <div class="controls">
-                                    <input type="text" id="inputEmail" placeholder="ชื่อเข้าระบบ">
+                                    <input type="text" id="inputDName" placeholder="ชื่อเข้าระบบ">
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="inputPassword">รหัสเข้าระบบ</label>
+                                <label class="control-label" for="inputPassword">รหัสผ่าน*</label>
                                 <div class="controls">
                                     <input type="password" id="inputPassword" placeholder="รหัสเข้าระบบ">
                                 </div>
-                            </div>
-                            <div class="control-group">
-                                <label class="control-label" for="inputPassword">ชื่อผู้ที่สามารถติดต่อได้(Contact Name)</label>
+                                <label class="control-label" for="inputPassword">รหัสผ่าน(อีกครั้ง)*</label>
                                 <div class="controls">
-                                    <input type="password" id="inputPassword" placeholder="ชื่อผู้ที่สามารถติดต่อได้(Contact Name)">
+                                    <input type="password" id="inputRePassword" placeholder="รหัสเข้าระบบ">
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="inputPassword">นามสกุลผู้ที่สามารถติดต่อได้(Contact Name)</label>
+                                <label class="control-label" for="inputPassword">ชื่อ</label>
                                 <div class="controls">
-                                    <input type="password" id="inputPassword" placeholder="นามสกุลผู้ที่สามารถติดต่อได้(Contact Name)">
+                                    <input type="text" id="inputName" placeholder="ชื่อ">
                                 </div>
                             </div>
                             <div class="control-group">
-                                <label class="control-label" for="inputPassword">E-mail Address</label>
+                                <label class="control-label" for="inputPassword">นามสกุล</label>
                                 <div class="controls">
-                                    <input type="password" id="inputPassword" placeholder="E-mail Address">
+                                    <input type="text" id="inputSurname" placeholder="นามสกุล">
                                 </div>
                             </div>
-                       
                             <div class="control-group">
+                                <label class="control-label" for="inputPassword">E-mail Address*</label>
                                 <div class="controls">
-                                    
-                                    <button type="submit" class="btn">ยืนยันการสมัครสมาชิก</button>
+                                    <input type="text" id="inputEmail" placeholder="E-mail Address">
+                                </div>
+                            </div>
+
+                            <div class="control-group">
+                                <div class="controls">                                    
+                                    <button type="btn" class="register">ยืนยันการสมัครสมาชิก</button>
                                 </div>
                             </div>
                         </form>
-                            
-               
-                            
-                            
-                            
-                    <hr>       
+
+
+
+
+
+                        <hr>       
                     </div><!--/span-->         
-                    <li>
-                        <footer>
-                            <p>© Company 2013 <a href="./index.php">UBON SHOPPING FOOT.</a>, Ltd.   All rights reserved.  <a href="./index.php">UBON SHOPPING FOOT.</a>is a member of Lnw, Inc. Group</p>
-                        </footer>
-                    </li>
+                    <!--                    <li>
+                                            <footer>
+                                                <p>© Company 2013 <a href="./index.php">UBON SHOPPING FOOT.</a>, Ltd.   All rights reserved.  <a href="./index.php">UBON SHOPPING FOOT.</a>is a member of Lnw, Inc. Group</p>
+                                            </footer>
+                                        </li>-->
                 </div><!--/row-->
-                    
-                    
+
+
                 <hr>
-                    
-                    
+
+
             </div><!--/.fluid-container-->
         </div>
-    <!-- Le javascript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.js"></script>
-    <script src="/js/bootstrap.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    
-    
-   
+        <!-- Le javascript
+        ================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src="/js/jquery.js"></script>       
+        <script src="/js/bootstrap.js"></script>
+        <script src="/js/bootstrap.min.js"></script>
+        <script src="/js/jquery-1.8.2.min.js"></script>
+        <script src="/js/member.js"></script>
 
-  
 
-</body>
+
+    </body>
