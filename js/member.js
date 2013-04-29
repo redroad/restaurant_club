@@ -14,13 +14,21 @@ $(document).ready(function(){
         //console.log('check pass');
         }else{
             // console.log('check dup');
-            $.post('/controller/MembersController.php?act=check_duplicate',
-            {        
-                email:email
+            $.get('/controller/MembersController.php',
+            {
+                act:'getuser',
+                id:1
             },
             function(res){
-                console.log(res);  
+                console.log(res);   
             });
+        //            $.post('/controller/MembersController.php?act=check_duplicate',
+        //            {        
+        //                email:email
+        //            },
+        //            function(res){
+        //                console.log(res);  
+        //            });
         //                        var res = $.ajax({
         //                            type:'POST',
         //                            url:'/controller/MembersController.php',

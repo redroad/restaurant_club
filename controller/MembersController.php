@@ -1,8 +1,8 @@
 <?php
-
+include 'DBcontrol.php';
 header('Content-type: application/json');
-include 'DBcontroller.php';
-$db = new DBcontroller();
+
+$db = new DBcontrol();
 $db->connect();
 $act = isset($_REQUEST['act']) ? $_REQUEST['act'] : "";
 //echo $act;
@@ -31,8 +31,14 @@ if ($act == 'check_duplicate') {
         //var_dump($rs);
     }
     echo json_encode(array('result' => $result));
-} else {
-    
 }
+
+if ($act == 'getuser') {
+    $id = $_REQUEST['id'];
+    $sql = "SELECT * FROM members WHERE `id`=$id";
+    $rs = $db->query($sql);
+    echo json_encode($rs);
+}
+
 $db->close();
 ?>
