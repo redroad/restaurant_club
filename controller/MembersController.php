@@ -1,4 +1,5 @@
 <?php
+
 include 'DBcontrol.php';
 header('Content-type: application/json');
 
@@ -32,7 +33,21 @@ if ($act == 'check_duplicate') {
     }
     echo json_encode(array('result' => $result));
 }
-
+if ($act == 'login') {
+    $email = $_REQUEST['email'];
+    $password = $_REQUEST['password'];
+    $sql = "SELECT * FROM members WHERE `email`='$email' LIMIT 1";
+    $rs = $db->query($sql);
+    $result = array('success' => true, 'des' => 'can use', 'user' => $rs[0]);
+    if (empty($rs)) {
+        $result['success'] = false;
+        $result['des'] = 'User not found';
+    } else if ($rs[0]['password'] != md5($password)) {
+        $result['success'] = false;
+        $result['des'] = 'Wrong password';
+    }
+    echo json_encode(array('result' => $result));
+}
 if ($act == 'getuser') {
     $id = $_REQUEST['id'];
     $sql = "SELECT * FROM members WHERE `id`=$id";
